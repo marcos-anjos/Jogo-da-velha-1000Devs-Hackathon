@@ -23,7 +23,8 @@
 4. [Como Jogar](#como-jogar)
 5. [Funcionalidades do Projeto](#funcionalidades-do-projeto)
 6. [Limitações](#limitações)
-7. [Desenvolvedores](#desenvolvedores)
+7. [Possíveis Melhorias](#possiveis-melhorias)
+8. [Desenvolvedores](#desenvolvedores)
 
 ---
 
@@ -90,6 +91,14 @@ A cada jogada, o tabuleiro é exibido no console.
 
 - **Jogadas do computador**: Simples, escolhendo posições livres aleatoriamente. Não utiliza lógica avançada para prever movimentos.
 - **Interface limitada**: Funciona exclusivamente via console.
+
+---
+
+## <a name="possiveis-melhorias">Possíveis Melhorias</a>
+
+- **Melhoria na Inteligência Artificial**: Tornar a jogada do computador mais estratégica.
+- **Modo de Dois Jogadores**: Permitir que duas pessoas joguem entre si.
+- **Tamanho do tabuleiro**: Permitir que o jogador escolha o tamanho do tabuleiro.
 
 ---
 
