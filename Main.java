@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -41,6 +42,7 @@ public class Main {
         teclado.close();
     }
 
+    // Funções de configuração
     public static char obterCaractereUsuario(Scanner teclado) {
         char simbolo;
 
@@ -67,6 +69,7 @@ public class Main {
         return new Random().nextBoolean();
     }
 
+    // Funções de inicialização e exibição
     public static char[][] inicializarTabuleiro() {
         char[][] tabuleiro = new char[3][3];
 
@@ -109,6 +112,7 @@ public class Main {
         }
     }
 
+    // Funções de processamento do jogo
     public static char[][] processarVezUsuario(Scanner teclado, char[][] tabuleiro, char caractereUsuario) {
         System.out.println("Sua vez de jogar!");
         int[] jogada = obterJogadaUsuario(retornarPosicoesLivres(tabuleiro), teclado);
@@ -181,6 +185,7 @@ public class Main {
         return tabuleiro;
     }
 
+    // Funções de validação e resultado do jogo
     public static boolean teveGanhador(char[][] tabuleiro, char caractereJogador) {
         return teveGanhadorLinha(tabuleiro, caractereJogador) ||
                 teveGanhadorColuna(tabuleiro, caractereJogador) ||
@@ -240,26 +245,27 @@ public class Main {
         return resultado.toString();
     }
 
+    // Funções de exibição de resultados finais
     public static void exibirVitoriaComputador() {
         System.out.println("O computador venceu!");
         System.out.println("     _______");
         System.out.println("    |       |");
         System.out.println("    | ^   ^ |");
         System.out.println("    |   u   |");
-        System.out.println("    |  \\_/  |");
+        System.out.println("    |  \_/  |");
         System.out.println("    |_______|");
-        System.out.println("   /         \\");
-        System.out.println("  /___________\\");
+        System.out.println("   /         \");
+        System.out.println("  /___________\");
     }
 
     public static void exibirVitoriaUsuario() {
         System.out.println("O usuário venceu!");
         System.out.println("   O     O     O     O     O");
         System.out.println("  /|\\   /|\\   /|\\   /|\\   /|\\");
-        System.out.println("  / \\   / \\   / \\   / \\   / \\");
+        System.out.println("  / \\\   / \\\   / \\\   / \\\   / \\");
         System.out.println("  \\o/   \\o/   \\o/   \\o/   \\o/");
         System.out.println("   |     |     |     |     |");
-        System.out.println("  / \\   / \\   / \\   / \\   / \\");
+        System.out.println("  / \\\   / \\\   / \\\   / \\\   / \\");
         System.out.println("Parabéns! Você Ganhou!");
     }
 
